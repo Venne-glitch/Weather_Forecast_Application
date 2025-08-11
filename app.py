@@ -10,7 +10,7 @@ st.set_page_config(page_title="Weather Dashboard", layout="wide")
 st.title("How's the weather? 🌤️")
 
 # ==== File Path ====
-file_path = r"C:\Path\To\Your\weather_forecast_data.csv"
+file_path = r"D:\Deep Learning\weather_forecast_data.csv"
 df = pd.read_csv(file_path)
 
 if not os.path.exists(file_path):
@@ -59,5 +59,6 @@ else:
 
     fig.tight_layout()
     st.pyplot(fig)
+
 
 
